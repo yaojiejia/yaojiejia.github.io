@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Alex - Jia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Alex</strong> <span>Jia</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="landing.html">Work Experience</a></li>
+						<li><a href="project.html">Projects</a></li>
+						<li><a href="elements.html">Others</a></li>
+						<li><a href="elements.html">Nature of Code</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Gold Miner</h1>
+									</header>
+									<span class="image main"><img src="noc/p1image/main.png" alt="" /></span>
+									<p>I created a simple random walker project called the “gold miner”. In the first chunk of the code, I created some global variables that every function can have access to, and then I thought in order for the random walker to know that the xy coordinate has gold under it, I need a 2-D grid for the entire canvas. I assigned the values of every block in the grid as false and then I created another function called createGold that randomized 50 golds in a 400 x 400 canvas and if the block has a gold under it I set it to true, why 79? Because gold is Au. Then the setUp function just set everything up and calls the required functions. The draw function is the most important part of this code, it initializes the walker at the xy position and the walker will start randomly walking in the xy direction. Every walk that walker takes checks if the block under has gold and the block is not undefined which is part out of the canvas. If there is a gold under the block, it increments the score and the last function is to display the score on the top left.
+										To be honest I wanted to create a self-avoiding walker by using the data structure I learned last semester, I tried stacks and queues for the visited block but I did not reach my goal, then I watched the coding train video on the self-avoiding walker which was quite interesting and his approaching was a little different than mine. If I have time I will definitely complete this project by using the self-avoiding algorithm because who would mine a block that has just dirt under it?
+										I also encountered a problem when I tried to display the score, the score just kept stacking up on each other on the top left screen as you can see which is a problem I need to solve. 
+									</p>
+									<a href="https://editor.p5js.org/AlexJia/sketches/yKme0Fx7c">Link to the code</a>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+							<li><a href="https://www.instagram.com/p_jiayaojie/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/yaojiejia" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/alex-jia-859236209/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+						
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
