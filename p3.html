@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Alex - Jia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Alex</strong> <span>Jia</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="landing.html">Work Experience</a></li>
+						<li><a href="project.html">Projects</a></li>
+						<li><a href="elements.html">Others</a></li>
+						<li><a href="elements.html">Nature of Code</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Arrow</h1>
+									</header>
+									
+                                    <p>
+                                         1. `setup()` function:
+                                           - This function is a part of p5.js and is called once when the program starts.
+                                           - It is used for initializing settings, creating canvas, creating objects, etc.
+                                           - In this code, it sets up the canvas and initializes instances of the `Canon` and `Target` classes.
+                                        
+                                        2. `draw()` function:
+                                           - Also a part of p5.js, this function continuously executes the lines of code contained within it.
+                                           - It's typically used for continuous drawing and updating of the canvas.
+                                           - In this code, it clears the background, displays the cannon, target, score, and updates the positions of the projectiles.
+                                        
+                                        3. `mousePressed()` function:
+                                           - This function is another p5.js function, which is called every time the mouse is pressed.
+                                           - It's used here to create a new projectile whenever the mouse is clicked.
+                                           - It calculates the direction from the cannon to the mouse click and creates a new `Projectile` instance with that direction.
+                                        
+                                        4. `displayScore()` function:
+                                           - Custom function created to display the score on the canvas.
+                                           - It uses the p5.js functions `textSize()` and `text()` to draw the score on the canvas at a specific location.
+                                           - It's called within the `draw()` function to update and display the score continuously.
+                                        
+                                        5. `Canon` class:
+                                           - This is a constructor function for creating instances of cannons.
+                                           - It takes initial x and y positions as arguments.
+                                           - The `display()` method draws the cannon on the canvas using the `rect()` function.
+                                        
+                                        6. `Target` class:
+                                           - Similar to the `Canon` class, this constructor function creates instances of targets.
+                                           - The `display()` method draws the target on the canvas using the `rect()` function.
+                                           - The `randomizeX()` method randomly changes the target's x-coordinate within a specified range.
+                                        
+                                        7. `Projectile` class:
+                                           - This constructor function creates instances of projectiles.
+                                           - It takes initial x and y positions, and a direction vector as arguments.
+                                           - The `update()` method updates the position of the projectile based on its velocity and handles collision detection with the canvas boundaries.
+                                           - The `display()` method draws the projectile on the canvas using the `ellipse()` function.
+                                           - The `hits()` method checks if the projectile hits the target. If it does, it returns true, otherwise false.</p>
+									<a href="https://editor.p5js.org/AlexJia/sketches/Y2x8ILgsa">Link to the code</a>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+							<li><a href="https://www.instagram.com/p_jiayaojie/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/yaojiejia" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/alex-jia-859236209/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>
+						
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
